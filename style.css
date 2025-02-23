@@ -41,15 +41,18 @@ body {
     z-index: -1; 
 }
 /* banner */
+/* Banner Video */
 #ban {
-    position:absolute;
-    top: 0;
+    position: absolute;
+    top: 0px; /* Sticks to the top */
     left: 0;
-    width: 100vw; 
-    height: 180px;
-    background: black; 
-    z-index: 1; 
+    width: 100vw; /* Full width */
+    height: 180px; /* Same height as before */
+    object-fit: cover; /* Makes sure video covers the area */
+    z-index: 1; /* Behind heading but above background */
+    pointer-events: none; /* Prevents user interaction */
 }
+
 /* news hyperlink */
 #n1 {
     position: absolute;
