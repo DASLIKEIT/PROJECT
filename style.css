@@ -1,0 +1,127 @@
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make the body scrollable */
+body {
+    width: 100vw; 
+    min-height: 200vh; 
+    position: relative;
+    overflow-y: auto; 
+    padding-top: 50px;
+}
+
+/* Heading Image */
+#head {
+    position: absolute; 
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw; 
+    height: 180px;
+    z-index: 2; 
+}
+
+/* Background Image */
+#back {
+    position: absolute;
+    top: 210px; 
+    left: 0;
+    width: 100vw;
+    height: calc(100% + 50px); 
+    object-fit: cover;
+    z-index: -1; 
+}
+/* banner */
+#ban {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 180px;
+    background: black; 
+    z-index: 1; 
+}
+/* news hyperlink */
+#n1 {
+    position: absolute;
+    top: 200px;
+    left: 330px; 
+    transform: translateY(-50%); 
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000; 
+    background-color: black;
+}
+/* Hover effect */
+#n1:hover {
+    color: white; 
+    background-color: red;
+}
+/* movies hyperlink*/
+#n2 {
+    position: absolute;
+    top: 200px;
+    left: 925px; 
+    transform: translateY(-50%); 
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000; 
+    background-color: black;
+}
+
+/* Hover effect */
+#n2:hover {
+    color: white;
+    background-color: red;
+}
+/* home */
+#n3 {
+    position: absolute;
+    top: 195px; 
+    left: 10px; 
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+/* Hover effect */
+#n3:hover {
+    color: red;
+}
+/* menu */
+#n4 {
+    position: absolute;
+    top: 195px; 
+    right: 10px; 
+    transform: translateY(-50%);
+    font-size: 30px; 
+    color: black;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+/* Hover effect */
+#n4:hover {
+    color: red;
+}
